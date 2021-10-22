@@ -4,17 +4,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-import accuweather.Testvagrant.Helper.DriverHelper;
-import accuweather.Testvagrant.Helper.NumberUtilHelper;
-import accuweather.Testvagrant.Helper.RestAssuredHelper;
-import accuweather.Testvagrant.Pages.HomePage;
-import accuweather.Testvagrant.Pages.WeatherInfoPage;
-
-public class SampleJUnitTest {
-
+import Testvagrant.Helper.DriverHelper;
+import Testvagrant.Helper.NumberUtilHelper;
+import Testvagrant.Helper.RestAssuredHelper;
+import accuweather.Testvagrant.pages.HomePage;
+import accuweather.Testvagrant.pages.WeatherInfoPage;
 
 
+public class AccuTests {
 
 	@BeforeEach
 	public void beforeTest()
@@ -32,8 +31,11 @@ public class SampleJUnitTest {
 		WeatherInfoPage infoPage=new WeatherInfoPage();
 		NumberUtilHelper numHelper=new NumberUtilHelper();
 
+		
 		homepage.clickOnSearchBar();
+		
 		homepage.searchForCityt(city);
+		
 		infoPage.assertDisplayed(); 
 		infoPage.verifySelectedCityAppears(city); 
 		float uiTemp=infoPage.getTemperature();

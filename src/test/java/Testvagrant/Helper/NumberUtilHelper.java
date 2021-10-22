@@ -1,4 +1,4 @@
-package accuweather.Testvagrant.Helper;
+package Testvagrant.Helper;
 
 public class NumberUtilHelper {
 

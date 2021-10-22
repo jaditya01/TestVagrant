@@ -1,10 +1,11 @@
-package accuweather.Testvagrant.Helper;
+package Testvagrant.Helper;
 
 import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverHelper {
@@ -13,8 +14,10 @@ public class DriverHelper {
 	public static void createDriver()
 	{
 		String path=System.getProperty("user.dir");
+		ChromeOptions o = new ChromeOptions();
+		o.addArguments("--disable-notifications");
 		System.setProperty("webdriver.chrome.driver", path+"\\chromedriver.exe");
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(o);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.accuweather.com/");
 		driver.manage().window().maximize();	
