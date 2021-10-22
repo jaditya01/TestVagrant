@@ -1,4 +1,4 @@
-package accuweather.Testvagrant.pages;
+package accuweather.Testvagrant.Pages;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Helper.DriverHelper;
+import accuweather.Testvagrant.Helper.DriverHelper;
 
 public class BasePage {
 	

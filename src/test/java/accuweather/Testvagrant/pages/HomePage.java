@@ -1,4 +1,4 @@
-package accuweather.Testvagrant.pages;
+package accuweather.Testvagrant.Pages;
 import java.util.List;
 
 import org.junit.jupiter.api.Assertions;

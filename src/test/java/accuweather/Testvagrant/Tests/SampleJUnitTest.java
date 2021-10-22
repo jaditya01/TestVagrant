@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import Helper.DriverHelper;
-import Helper.NumberUtilHelper;
-import Helper.RestAssuredHelper;
-import accuweather.Testvagrant.pages.HomePage;
-import accuweather.Testvagrant.pages.WeatherInfoPage;
+import accuweather.Testvagrant.Helper.DriverHelper;
+import accuweather.Testvagrant.Helper.NumberUtilHelper;
+import accuweather.Testvagrant.Helper.RestAssuredHelper;
+import accuweather.Testvagrant.Pages.HomePage;
+import accuweather.Testvagrant.Pages.WeatherInfoPage;
 
 public class SampleJUnitTest {
 

@@ -1,4 +1,4 @@
-package accuweather.Testvagrant.pages;
+package accuweather.Testvagrant.Pages;
 
 import org.apache.logging.log4j.core.util.Assert;
 import org.junit.jupiter.api.Assertions;
